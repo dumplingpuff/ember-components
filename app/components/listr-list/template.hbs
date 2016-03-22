@@ -1,0 +1,18 @@
+<!-- listr component -->
+<h2 {{action "toggleHidden"}}>{{list.title}}</h2>
+{{#each list.items as |list|}}
+{{list-item item=list}}
+{{/each}}
+
+
+{{!--
+We moved each out to represent a list at a time for semantic reasons.
+{{#each list.items as |item|}}
+<li>{{item.content}}</li>
+{{/each}}
+--}}
+
+{{!--
+This is when list item is nested in listr list like class example.
+{{listr-list/list-item item=item}}
+--}}

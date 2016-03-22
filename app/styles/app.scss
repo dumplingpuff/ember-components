@@ -1,2 +1,11 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+
+.listr-list--hidden :not(:first-child) {
+  display: none;
+}
+
+.listr-list__listr-list-item--done {
+  text-decoration: line-through;
+}

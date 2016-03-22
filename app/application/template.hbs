@@ -1,3 +1,5 @@
-<h1> Welcome to Ember! </h1>
-
-{{outlet}}
+<!-- application -->
+<h1> Listr </h1>
+{{#each model as |list|}}
+{{listr-list list=list}}
+{{/each}}
